@@ -100,7 +100,7 @@ class PromptGeneration(Workflow):
     )
 
     evaluator: Agent = Agent(
-        model=OpenAIResponses(id="gpt-4.1"),
+        model=OpenAIResponses(id="o4-mini"),
         instructions=dedent("""\
                 Design a prompt for an agent responsible for assessing and enhancing the quality of prompts created by another agent.
 
